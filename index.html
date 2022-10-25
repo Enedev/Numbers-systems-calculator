@@ -8,32 +8,40 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    Name: <input id = "numero" type="text" placeholder="Numero" value="0">
-    <h2>Que tipo de numero es?</h2>
-    <button type="button" onclick="decimal()">decimal</button>
-    <button type="button" onclick="binary()">Binario</button>
-    <button type="button" onclick="octal()">Octal</button>
-    <button type="button" onclick="hexadecimal()">Hexadecimal</button>
-
-    <h2 id = "result"></h2>
-    <div id = "d2">
-        <h3 id="binatext"></h3>  
-        <span id="binary"></span>
-    </div>
-    <div id = "d10">
-        <h3 id="decitext"></h3>  
-        <span id="decimal"></span>
-    </div>
-    <div id = "d8">
-        <h3 id="octatext"></h3>  
-        <span id="octal"></span>
-    </div>
-    <div id = "d16">
-        <h3 id="hexatext"></h3>  
-        <span id="hexadecimal"></span>
+    <div class="base">
+        <h1>Calculadora</h1>
+        <div class="input-css">
+            Input-number: <input id = "numero" type="text" placeholder="Tu numero" value="">
+        </div>
+        <h2>Que tipo de numero es?</h2>
+        <div class="buttons">
+            <button type="button" onclick="decimal()">decimal</button>
+            <button type="button" onclick="binary()">Binario</button>
+            <button type="button" onclick="octal()">Octal</button>
+            <button type="button" onclick="hexadecimal()">Hexadecimal</button>
+        </div>
+        <h2 id = "result"></h2>
+        <div class="output-text">
+            <div id = "d2" class="output">
+                <h3 id="binatext"></h3>  
+                <span class="number-result" id="binary"></span>
+            </div>
+            <div id = "d10" class="output">
+                <h3 id="decitext"></h3>  
+                <span class="number-result" id="decimal"></span>
+            </div>
+            <div id = "d8" class="output">
+                <h3 id="octatext"></h3>  
+                <span class="number-result" id="octal"></span>
+            </div>
+            <div id = "d16" class="output">
+                <h3 id="hexatext"></h3>  
+                <span class="number-result" id="hexadecimal"></span>
+            </div>
+        </div>
+        
+        <script src="/js/calcu.js"></script>
     </div>
     
-    <script src="/js/calcu.js"></script>
 </body>
 </html>
